@@ -143,17 +143,27 @@
 // }
 
 
-   let age = 18;
-   let country = 'Nigeria';
-   if (country === 'Nigeria' || age < 18) {
-        console.log("Not Eligible To Vote!");
-   }
-   else {
-    console.log("You can vote")
-   }
+//    let age = 18;
+//    let country = 'Nigeria';
+//    if (country === 'Nigeria' || age < 18) {
+//         console.log("Not Eligible To Vote!");
+//    }
+//    else {
+//     console.log("You can vote")
+//    }
 
-    // 90 - 100 grade A
-    // 70 -89 grade B
-    // 60 - 59 Grade C
-    // 40 - 49 Fail 
-    // 0 - 39 Unknown Result 
+
+//     // 90 - 100 grade A
+//     // 70 -89 grade B
+//     // 60 - 59 Grade C
+//     // 40 - 49 Fail 
+//     // 0 - 39 Unknown Result 
+
+
+    let x = parseInt(prompt('Enter a number'));
+
+    x = -1;
+
+    while (x > 0) {
+     console.log(x);
+    }
