@@ -160,10 +160,26 @@
 //     // 0 - 39 Unknown Result 
 
 
-    let x = parseInt(prompt('Enter a number'));
+//     let x = parseInt(prompt('Enter a number'));
 
-    x = -1;
+//     x = -1;
 
-    while (x > 0) {
-     console.log(x);
-    }
+//     while (x > 0) {
+//      console.log(x);
+//     }
+
+
+// let x = 0;
+
+// while(x <= 0) {
+//      console.log(x);
+//      ++x;
+// }
+
+
+let numberMultiple = prompt('Enter Number')
+let count = 1;
+while (count <= 12) {
+     console.log(`${numberMultiple} x ${count} is ${numberMultiple*count}`);
+     ++count;
+}
