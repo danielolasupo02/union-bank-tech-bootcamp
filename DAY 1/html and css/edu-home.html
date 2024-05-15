@@ -1,0 +1,348 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+        /* body {
+            background-color: #87CEEB;
+        } */
+
+
+        /* header styling begins */
+
+        .header-container {
+            
+            background: linear-gradient(to right, #fef0e7, #f6f0f2);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 20px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+
+         
+        }
+
+        .header-middle ul{
+            display: flex;
+        }
+
+        .header-middle ul li{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            list-style: none;
+            padding: 20px;
+        }
+
+        .header-middle ul li a{ 
+            text-decoration: none;
+            color: #000000;
+        }
+
+        .header-right {
+            display: flex;
+            align-items: center;
+            color: #ffffff;
+            border-radius: 10px;
+        }
+
+        .header-right .search {
+            background-color: #ffffff;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .header-right .profile {
+            background-color: #0000ff;
+            color: #ffffff;
+            padding: 15px 40px;
+            border-radius: 5px;
+           
+        }
+
+        .header-right .profile a{
+            color: #ffffff;
+            text-decoration: none;
+            cursor: pointer;
+           
+        }
+
+        .header-right .profile:hover {
+            background-color: rgb(57, 57, 61);
+        }
+
+        /* header end */
+
+
+
+        /* banner container starts */
+        .banner-container {
+            width: 100%;
+            background: linear-gradient(to right, #fef0e7, #f6f0f2);
+            height: 100vh;
+            display: flex;
+        
+        }
+
+        .banner-container .banner-left {
+            width: 50%;
+            position: relative;
+            height: 100%;
+        }
+
+        .banner-container .banner-right {
+            width: 50%;
+            height: 100%;
+        }
+
+        .banner-left {
+            display: flex;
+            flex-direction: column;
+            width: 50%;
+            /* background-color: #000000; */
+            background: linear-gradient(to right, #fef0e7, #f6f0f2);
+
+            margin: 0 87px;
+        }
+
+        .banner-left .text-1 {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 16px;
+            color: #525de0;
+        }
+
+        .banner-left .text-2 {
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 68px;
+            color: #231f41;
+        }
+
+        .banner-left .text-3 {
+            margin-top: 25px;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 20px;
+            line-height: 32px;
+            color: #6f6b80;
+        }
+
+        .banner-left .text-4 {
+            margin-top: 30px;
+        }
+
+        .banner-left .text-4 strong{
+            
+            border-radius: 6px;
+            background-color: #3e439d;
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-size: 18px;
+            line-height: 28.8px;
+            color: #ffffff;
+            letter-spacing: normal;
+            padding: 10px 30px;
+            /* padding: 16px 30px; */
+        }
+
+      
+        .banner-right {
+            position: relative;
+            width: 50%;
+           
+          
+        }
+        .banner-right .image1{
+            position: absolute;
+            left: 140px;
+        }
+
+        .banner-right .image2{
+
+           position: absolute;
+           top: 180px;
+           right: 200px;
+            
+        }
+
+        .banner-right .image3{
+            position: absolute;
+            left: 240px;
+            top: 100px;
+        }
+
+        /* banner container end */
+
+
+        /* CSS Media Query */
+        @media screen and (max-width: 400px) {
+
+        /* header styling begins */
+        .header-container {
+            
+            background: linear-gradient(to right, #fef0e7, #f6f0f2);
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+            padding: 20px 40px;
+            position: sticky;
+            top: 0;
+            z-index: 10;
+
+         
+        }
+
+        .header-middle, .header-right{
+            display: none;
+        }
+
+        
+
+
+        .header-middle ul{
+            display: flex;
+        }
+
+        .header-middle ul li{
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            list-style: none;
+            padding: 20px;
+        }
+
+        .header-middle ul li a{ 
+            text-decoration: none;
+            color: #000000;
+        }
+
+        /* .header-right {
+            display: none;
+        } */
+
+        .header-right .search {
+            color: #000000;
+            background-color: #ffffff;
+            margin: 10px;
+            padding: 5px;
+        }
+
+        .header-right .profile {
+            background-color: #0000ff;
+            color: #ffffff;
+            padding: 15px 40px;
+            border-radius: 5px;
+           
+        }
+
+        .header-right .profile a{
+            color: #ffffff;
+            text-decoration: none;
+            cursor: pointer;
+           
+        }
+
+        .header-right .profile:hover {
+            background-color: rgb(57, 57, 61);
+        }
+
+        .media {
+            color: #4638ac;
+            /* display: block; */
+            display: flex;
+            align-items: center;
+            gap: 5px;
+
+        }
+
+        .header-icon {
+            color: #4638ac;
+            background-color: #ffffff;
+            padding: 5px;
+        }
+
+        /* header end */
+
+            .banner-container {
+                display: none;
+            }
+
+
+            
+        }
+
+
+
+
+
+
+
+
+
+    </style>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+    <header class="header-container">
+        <div class="header-left">
+            <h1 style="color: #525de0; font-size: 15px;">EduHome</h1>
+        </div>
+        <div class="header-middle">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">About</a></li>
+                <li><a href="">Courses</a></li>
+                <li><a href="">Event</a></li>
+                <li><a href="">Blog</a></li>
+                <li><a href="">Contact</a></li>
+            </ul>
+        </div>
+        <div class="header-right">
+            <main class="search">
+                <i class="bi bi-search"></i>
+    
+            </main>
+
+
+            <!---Houses the Person Icon and the login/register -->
+            <nav class="profile">
+                <i class="bi bi-person"></i>
+                <a href="">Login/Register</a>
+            </nav>
+
+
+        </div>
+
+        <div class="media">
+            <a href=""><i class="bi bi-search header-icon"></i></a>
+            <a href=""><i class="bi bi-person header-icon"></i></a>
+            <a href=""><i class="bi bi-list header-icon"></i></a>
+
+        </div>
+    </header>
+
+    <section class="banner-container">
+        <div class="banner-left">
+            <div class="text-1"><strong>BETTER LEARNING FUTURE WITH US</strong></div>
+            <div class="text-2"><strong>Education Is About Academic Excellence</strong></div>
+            <div class="text-3">Sed eu volutpat arcu, a tincidunt nulla quam, feugiat sit amet ipsum a, dapibus porta velit.</div>
+            <div class="text-4">
+                <strong>Get Started Today <span>&rarr;</span></strong>
+            </div>
+        </div>
+        <div class="banner-right">
+           <div class="image1">
+            <img src="images/hero-abs-2.png" alt="Hero 1">
+           </div>
+          <div class="image2">
+            <img src="images/hero-banner.png" alt="Hero 2">
+          </div>
+            <div class="image3">
+                <img src="images/hero-abs-1.png" alt="Hero Banner">
+            </div>
+        </div>
+    </section>
+</body>
+</html>

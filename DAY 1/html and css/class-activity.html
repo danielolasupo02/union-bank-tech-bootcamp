@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .form {
+            background-color: #344c4c;
+            max-width: 600px; /* Set a maximum width for the form container */
+  margin: 0 auto; /* Center the form container horizontally */
+  padding: 20px; /* Add padding to the form container */
+  box-sizing: border-box; /* Include padding in the width calculation */
+            position: relative;
+            font-family: sans-serif;
+        }
+
+        .line {
+            width: 100px; /* Change this value to set the width of the line */
+            height: 2px; /* Height of the line */
+            background-color: black; /* Color of the line */
+            position: absolute;
+            bottom: 0; /* Adjust this value as needed */
+            left: 0;
+            animation: moveLine 5s linear infinite; /* Adjust the animation duration as needed */
+            }
+
+            .textbox {
+                padding: 10px 20px;
+                border-radius: 10px;
+            }
+
+@keyframes moveLine {
+  0% {
+    left: -100px; /* Negative value to start outside the form */
+  }
+  100% {
+    left: calc(100% + 100px); /* Move it outside the form width */
+  }
+}
+    </style>
+</head>
+<body>
+    <form action="" class="form">
+
+        <div>
+            <span><h3 style="color: #ffffff;">Insurance Claim Form with Rules</h3></span>
+            <div style="color: #ffffff;">____________________________________</div>
+            <div class="line"></div>
+        </div>
+        
+        <div>
+            <label for="" style="color: #ffffff;"><h3>Policyholder's Information</h3></label>
+            <label for=""><strong>Policyholder's Full Name</strong></label>
+            <br>
+            <input type="text" placeholder="First" class="textbox">
+            <input type="text" placeholder="Last">
+        </div>
+
+        <div>
+            <label for=""><strong>Address</strong></label>
+            <br>
+            <input type="text" placeholder="Street address" >
+            <br>
+            <input type="text" placeholder="Street Address Line 2">
+            <br>
+            <input type="text" placeholder="City">
+            <input type="text" placeholder="Region">
+            <br>
+            <input type="text" placeholder="Postal / Zip Code">
+            <select id="countries">
+              <option value="USA">-- Select Country --</option>
+              <option value="USA">USA</option>
+              <option value="Canada">Canada</option>
+              <option value="UK">UK</option>
+              <option value="Australia">Australia</option>
+              <!-- Add more countries as needed -->
+            </select>   
+        </div>
+
+        <div>
+            <label for=""><strong>Email address</strong></label>
+            <input type="email" >
+
+            <label for=""><strong>Phone number</strong></label>
+            <input type="number" placeholder="### ### ###">
+        </div>
+
+        <div>
+            <label for=""><strong>Insurance Information</strong></label>
+            <br>
+            <p><span>Type of Insurance</span> <span>x Clear Choice</span></p>
+    
+            
+                <input type="radio" > Homeowners
+                <input type="radio" > Auto
+                <input type="radio" > Health
+            
+        </div>
+
+        <div>
+            <label for=""><strong>Date and Time of Incident</strong></label>
+            <br>
+        </div>
+    </form>
+</body>
+</html>
